@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 617742390771841942}
   - component: {fileID: 617742390771841943}
   - component: {fileID: 617742390771841941}
+  - component: {fileID: 6841518828686695014}
   m_Layer: 0
   m_Name: Player-chan
   m_TagString: Player
@@ -146,4 +147,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a7b28ed64297646b21a4c731414abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.2
+--- !u!114 &6841518828686695014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617742390771841938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2518030a7078cf942b5c1afcceb5c3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walk: {fileID: 617742390771841941}
+  dodgeTime: 0.2
+  dodgeSpeed: 0.6
+  dodgeCooldown: 0.2

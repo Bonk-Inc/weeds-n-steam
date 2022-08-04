@@ -12,6 +12,8 @@ public class PlayerWaling : MonoBehaviour
 
     private Rigidbody2D rb;
     
+    public Vector2 LastDirection {get; private set;}
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -32,6 +34,7 @@ public class PlayerWaling : MonoBehaviour
             direction += Vector2.right;
         }
         direction.Normalize();
+        LastDirection = direction;
 
         rb.velocity = direction * speed;
     }
