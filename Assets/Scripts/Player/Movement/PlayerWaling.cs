@@ -36,7 +36,6 @@ public class PlayerWaling : MonoBehaviour
         direction.Normalize();
         LastDirection = direction;
 
-        Debug.Log(direction * speed);
         rb.velocity = direction * speed;
     }
 

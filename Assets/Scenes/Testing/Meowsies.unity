@@ -511,11 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617742390771841936, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 617742390771841936, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.949
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 617742390771841936, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: m_LocalPosition.z
@@ -552,6 +552,14 @@ PrefabInstance:
     - target: {fileID: 617742390771841938, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: m_Name
       value: Player-chan
+      objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841941, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841518828686695014, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: dodgeSpeed
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
