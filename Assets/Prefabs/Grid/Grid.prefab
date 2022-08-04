@@ -47,7 +47,7 @@ MonoBehaviour:
   tilePreset: {fileID: 2124754714177832683, guid: 2a3a787a9f7852e4492fee23cea65e7e, type: 3}
   holderPreset: {fileID: 1644178136329635930, guid: a52cec93296341246ae5de80f3e0e205, type: 3}
   size: {x: 5, y: 5}
-  tileSize: 1
+  tileSize: 12
   rows: []
   OnTileCreated:
     m_PersistentCalls:
