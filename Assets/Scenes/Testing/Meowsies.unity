@@ -273,10 +273,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player-chan
       objectReference: {fileID: 0}
-    - target: {fileID: 617742390771841941, guid: 8375586639beb0546b108aecda696d72, type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8375586639beb0546b108aecda696d72, type: 3}
@@ -291,14 +287,6 @@ PrefabInstance:
     - target: {fileID: 3332708443851509233, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332708443851509245, guid: 952db7bad768a624698476157657a188, type: 3}
-      propertyPath: m_UpscaleRT
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332708443851509245, guid: 952db7bad768a624698476157657a188, type: 3}
-      propertyPath: m_PixelSnapping
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3332708443851509246, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: m_RootOrder
@@ -343,10 +331,6 @@ PrefabInstance:
     - target: {fileID: 3332708443851509246, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
-      propertyPath: orthographic size
-      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
