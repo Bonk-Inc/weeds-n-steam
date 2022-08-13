@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 617742390771841943}
   - component: {fileID: 617742390771841941}
   - component: {fileID: 6841518828686695014}
+  - component: {fileID: 257094268}
   m_Layer: 0
   m_Name: Player-chan
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 617742390771841938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.006, y: 0.949, z: -8.889469}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 652767290, guid: 93fbeff0c8402824e80ec6ba67e575a0, type: 3}
+  m_Sprite: {fileID: -1517259443, guid: 93fbeff0c8402824e80ec6ba67e575a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 8}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,18 +102,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 6, y: 8}
-    newSize: {x: 6, y: 8}
+    newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14, y: 15}
+  m_Size: {x: 7, y: 8}
   m_EdgeRadius: 0
 --- !u!50 &617742390771841943
 Rigidbody2D:
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &617742390771841941
 MonoBehaviour:
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a7b28ed64297646b21a4c731414abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 10
 --- !u!114 &6841518828686695014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,5 +163,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk: {fileID: 617742390771841941}
   dodgeTime: 0.2
-  dodgeSpeed: 60
+  dodgeSpeed: 0.6
   dodgeCooldown: 0.2
+--- !u!114 &257094268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617742390771841938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7933c6c7ec84f4782ce890220f898c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  initialHealth: 1
