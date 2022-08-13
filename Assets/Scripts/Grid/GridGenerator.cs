@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class TileCreated: UnityEvent<GridTile>{}
+public class TileCreated : UnityEvent<GridTile> { }
 
 [System.Serializable]
 public class GridGenerator : MonoBehaviour
@@ -22,15 +22,19 @@ public class GridGenerator : MonoBehaviour
 
     [SerializeField, Header("Grid Tiles")]
     private GridRow[] rows;
-    
+
     [SerializeField]
     public TileCreated OnTileCreated;
+
+    [SerializeField]
+    public UnityEvent OnGridCreated;
 
     private Transform tileHolder;
 
     public GridRow[] Rows { get => rows; }
 
-    private void Start() {
+    private void Start()
+    {
         CreateGrid();
     }
 
@@ -63,19 +67,20 @@ public class GridGenerator : MonoBehaviour
         if (!Application.isPlaying) EditorUtility.SetDirty(gameObject);
 #endif
         print("Grid Created.");
+        OnGridCreated?.Invoke();
         return rows;
     }
 
     private void CreateTile(int xPos, int yPos)
     {
         var tile = Instantiate(tilePreset, tileHolder);
-        
+
         tile.transform.localScale = new Vector3(tileSize, tileSize, tileSize);
 
         tile.transform.localPosition = new Vector3(xPos * tileSize, yPos * tileSize, 0);
-        tile.name = "Tile - " + (xPos+1) + " " + (yPos+1);
+        tile.name = "Tile - " + (xPos + 1) + " " + (yPos + 1);
         tile.SetPosition(new Vector2Int(xPos, yPos));
-        
+
         rows[xPos].Tiles[yPos] = tile;
 
         OnTileCreated?.Invoke(tile);
