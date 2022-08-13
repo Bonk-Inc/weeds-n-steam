@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: zx-spectrum
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -220682540
   material: {fileID: -7650856685533288204}
-  materialHashCode: 0
+  materialHashCode: -2045812364
   m_Version: 1.1.0
   m_SourceFontFileGUID: 7ec6b7182b304be429f6008f4e60c579
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 7ec6b7182b304be429f6008f4e60c579, type: 3}
