@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6244142049031873663}
   - component: {fileID: 4573822415506795197}
   - component: {fileID: 2124754714177832683}
+  - component: {fileID: 7347973150422956521}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4573822415506795197
 SpriteRenderer:
@@ -95,5 +96,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60038c4534dd7064cbd4b8969414732d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileSafety: {fileID: 7347973150422956521}
+--- !u!114 &7347973150422956521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894990294377367220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e973dab14c6cc74b8aa855713384a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

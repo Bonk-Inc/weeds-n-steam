@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GridTile : MonoBehaviour
 {
-    // Manages Type of tile
-    // Tile Safety
-    // Tile Visual
+    // TODO Tile Visual
+    // TODO Manages Type of tile?
+
+    [SerializeField]
+    private TileSafety tileSafety;
 
     private Vector2Int position;
 
@@ -15,5 +17,9 @@ public class GridTile : MonoBehaviour
     public void SetPosition(Vector2Int pos)
     {
         position = pos;
+    }
+
+    public void SetTileSafety(bool safe = true, float delay = 0) {
+        tileSafety.SetTileSafety(safe, delay);
     }
 }
