@@ -12,6 +12,9 @@ public class PlayerDodge : MonoBehaviour
     [SerializeField]
     private float dodgeTime, dodgeSpeed, dodgeCooldown;
 
+    [SerializeField]
+    private Animator animator;
+
     private Rigidbody2D rb;
     private float cooldownTimeElapsed;
 
@@ -33,6 +36,7 @@ public class PlayerDodge : MonoBehaviour
 
     private IEnumerator Dodge()
     {
+        animator.SetBool("Dashing", true);
         walk.enabled = false;
         var time = 0f;
         while (time < dodgeTime)
@@ -43,5 +47,6 @@ public class PlayerDodge : MonoBehaviour
         }
         cooldownTimeElapsed = 0;
         walk.enabled = true;
+        animator.SetBool("Dashing", false);
     }
 }
