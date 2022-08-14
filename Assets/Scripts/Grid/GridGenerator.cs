@@ -37,12 +37,13 @@ public class GridGenerator : MonoBehaviour
 
     public GridRow[] Rows { get => rows; }
 
-    
+
 
     private void Start()
     {
-        if(recreateAtStart) CreateGrid();
-        else {
+        if (recreateAtStart) CreateGrid();
+        else
+        {
             OnGridCreated?.Invoke();
         }
     }
@@ -69,7 +70,13 @@ public class GridGenerator : MonoBehaviour
 
             for (int j = 0; j < zSize; j++)
             {
-                CreateTile(i, j);
+                int edgeNumber = 0;
+                if (i == 0) edgeNumber += GridTile.LEFT_EDGE;
+                if (i == xSize - 1) edgeNumber += GridTile.RIGHT_EDGE;
+                if (j == 0) edgeNumber += GridTile.BOTTOM_EDGE;
+                if (j == zSize - 1) edgeNumber += GridTile.TOP_EDGE;
+
+                CreateTile(i, j, edgeNumber);
             }
         }
 #if UNITY_EDITOR
@@ -80,15 +87,15 @@ public class GridGenerator : MonoBehaviour
         return rows;
     }
 
-    private void CreateTile(int xPos, int yPos)
+    private void CreateTile(int xPos, int yPos, int edgeNumber)
     {
         var tile = Instantiate(tilePreset, tileHolder);
 
-        tile.transform.localScale = new Vector3(tileSize, tileSize, tileSize);
+        // tile.transform.localScale = new Vector3(tileSize, tileSize, tileSize);
 
         tile.transform.localPosition = new Vector3(xPos * tileSize, yPos * tileSize, 0);
         tile.name = "Tile - " + (xPos + 1) + " " + (yPos + 1);
-        tile.SetPosition(new Vector2Int(xPos, yPos));
+        tile.SetPosition(new Vector2Int(xPos, yPos), edgeNumber);
 
         rows[xPos].Tiles[yPos] = tile;
 

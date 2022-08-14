@@ -371,6 +371,10 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841943, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841518828686695014, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: dodgeSpeed
       value: 60
@@ -468,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: m_ForceIntoRT
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: orthographic size
@@ -640,6 +644,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8746899232945068866, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
+      propertyPath: tileSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746899232945068866, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
+      propertyPath: recreateAtStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8746899233121281877, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
       propertyPath: m_RootOrder
       value: 4
