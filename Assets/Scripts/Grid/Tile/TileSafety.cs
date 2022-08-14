@@ -20,12 +20,16 @@ public class TileSafety : MonoBehaviour
 
     public event Action<bool> OnSafetyChanged;
 
+    private void Awake()
+    {
+        SetSafety(safe);
+    }
+
     public void SetTileSafety(bool safe = true, float delay = 0)
     {
         if (delay <= 0) SetSafety(safe);
         else StartCoroutine(StartSafetyToggle(safe, delay));
     }
-
     private void SetSafety(bool safe)
     {
         this.safe = safe;
