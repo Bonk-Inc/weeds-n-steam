@@ -29,7 +29,6 @@ public class TitleScoreFader : MonoBehaviour
         var t = 0f;
         while (t < 1)
         {
-            Debug.Log(t);
             item.alpha = Mathf.Lerp(from, to, t);
             t += Time.deltaTime / fadeTime;
             yield return null;
