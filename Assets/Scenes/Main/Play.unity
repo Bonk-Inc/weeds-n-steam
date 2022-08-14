@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &336080771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257094268, guid: 8375586639beb0546b108aecda696d72, type: 3}
+  m_PrefabInstance: {fileID: 617742390727775091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7933c6c7ec84f4782ce890220f898c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587619097
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +206,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
   m_PrefabInstance: {fileID: 3332708443763298279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1761175745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8052825634560580024, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+  m_PrefabInstance: {fileID: 5736155246073189171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25fb597faf7cf147924a516cda5ec6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1808324924
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +375,14 @@ PrefabInstance:
       propertyPath: dodgeSpeed
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8460787156511591728, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1761175745}
+    - target: {fileID: 8460787156511591728, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 336080771}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8375586639beb0546b108aecda696d72, type: 3}

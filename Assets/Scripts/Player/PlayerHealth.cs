@@ -14,22 +14,32 @@ public class PlayerHealth : MonoBehaviour
     public event Action<int> OnHealthChange;
     public event Action OnDeath; // F
 
-    private void Awake() {
+    private void Awake()
+    {
         currentHealth = initialHealth;
     }
 
-    public void Heal(int amount) {
+    public void Heal(int amount)
+    {
         amount = Math.Max(0, Math.Min(amount, currentHealth - maxHealth));
         ChangeHealth(amount);
     }
 
-    public void Damage(int amount) {
+    public void Damage(int amount)
+    {
         ChangeHealth(-amount);
-        if(currentHealth <= 0) OnDeath?.Invoke();
+        if (currentHealth <= 0) OnDeath?.Invoke();
     }
 
-    private void ChangeHealth(int amount) {
+    private void ChangeHealth(int amount)
+    {
         currentHealth += amount;
         OnHealthChange?.Invoke(currentHealth);
+    }
+
+    [ContextMenu("kill")]
+    private void Kill()
+    {
+        Damage(currentHealth);
     }
 }
