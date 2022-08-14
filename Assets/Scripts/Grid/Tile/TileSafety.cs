@@ -13,10 +13,7 @@ public class TileSafety : MonoBehaviour
     public bool Safe => safe;
 
     [SerializeField]
-    private AnimationCurve flickerTimeCurve;
-
-    [SerializeField]
-    private float maxFlickerTime = 1;
+    private float maxFlickerTime = 0.2f, minFlickerTime = 0.01f;
 
     public event Action<bool> OnSafetyChanged;
 
@@ -38,7 +35,6 @@ public class TileSafety : MonoBehaviour
 
     private IEnumerator StartSafetyToggle(bool safe, float delay)
     {
-
         if (!safe)
             yield return StartCoroutine(Blinkies(delay));
 
@@ -51,10 +47,10 @@ public class TileSafety : MonoBehaviour
         while (timeElapsed < delay)
         {
             var t = Mathf.InverseLerp(0, delay, timeElapsed);
-            var curveTime = flickerTimeCurve.Evaluate(t);
-            var flickerTime = maxFlickerTime * curveTime;
+            var flickerTime = Mathf.Lerp(maxFlickerTime, minFlickerTime, t);
             var timeLeft = delay - timeElapsed;
             var finalFlickerTime = Math.Min(flickerTime, timeLeft);
+            alert.enabled = !alert.enabled;
             yield return new WaitForSeconds(finalFlickerTime);
             timeElapsed += flickerTime;
         }

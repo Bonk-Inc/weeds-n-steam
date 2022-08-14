@@ -101,7 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1027232684167702592}
-  rend: {fileID: 0}
+  rend: {fileID: 4573822415506795197}
+  position: {x: 0, y: 0}
 --- !u!114 &1027232684167702592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,32 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e973dab14c6cc74b8aa855713384a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alert: {fileID: 4573822415506795197}
-  flickerTimeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -2.591829
-      outSlope: -2.591829
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.107754946
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  maxFlickerTime: 1
+  alert: {fileID: 2631139476092299011}
+  maxFlickerTime: 0.3
+  minFlickerTime: 0.07
 --- !u!1 &8135986006881694846
 GameObject:
   m_ObjectHideFlags: 0
