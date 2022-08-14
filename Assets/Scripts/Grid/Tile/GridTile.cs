@@ -11,12 +11,12 @@ public class GridTile : MonoBehaviour
     private TileSafety tileSafety;
 
     [SerializeField]
-    private new SpriteRenderer renderer;
+    private SpriteRenderer rend;
 
     private Vector2Int position;
 
     public Vector2Int Position => position;
-    public SpriteRenderer Renderer => renderer;
+    public SpriteRenderer Renderer => rend;
 
     public void SetPosition(Vector2Int pos)
     {

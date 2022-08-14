@@ -24,6 +24,7 @@ public class GridGenerator : MonoBehaviour
     [SerializeField, Header("Grid Tiles")]
     private GridRow[] rows;
 
+    [SerializeField]
     private bool recreateAtStart = false;
 
     [SerializeField]
