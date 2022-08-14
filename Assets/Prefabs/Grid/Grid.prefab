@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 92875340}
+  rend: {fileID: 0}
 --- !u!114 &92875340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 96591518}
+  rend: {fileID: 0}
 --- !u!114 &96591518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 250795013}
+  rend: {fileID: 0}
 --- !u!114 &250795013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 303319252}
+  rend: {fileID: 0}
 --- !u!114 &303319252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 319231704}
+  rend: {fileID: 0}
 --- !u!114 &319231704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 358162391}
+  rend: {fileID: 0}
 --- !u!114 &358162391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 364948907}
+  rend: {fileID: 0}
 --- !u!114 &364948907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,6 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 367951574}
+  rend: {fileID: 0}
 --- !u!114 &367951574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,6 +995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 449410387}
+  rend: {fileID: 0}
 --- !u!114 &449410387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 450432020}
+  rend: {fileID: 0}
 --- !u!114 &450432020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,6 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 516919192}
+  rend: {fileID: 0}
 --- !u!114 &516919192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 568954642}
+  rend: {fileID: 0}
 --- !u!114 &568954642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,6 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 629991013}
+  rend: {fileID: 0}
 --- !u!114 &629991013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,6 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 670523745}
+  rend: {fileID: 0}
 --- !u!114 &670523745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,6 +1754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 711061660}
+  rend: {fileID: 0}
 --- !u!114 &711061660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,6 +1866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 764188961}
+  rend: {fileID: 0}
 --- !u!114 &764188961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,6 +1978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 793757825}
+  rend: {fileID: 0}
 --- !u!114 &793757825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,6 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 912035928}
+  rend: {fileID: 0}
 --- !u!114 &912035928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,6 +2202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 988913258}
+  rend: {fileID: 0}
 --- !u!114 &988913258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 991020867}
+  rend: {fileID: 0}
 --- !u!114 &991020867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2406,6 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1110326237}
+  rend: {fileID: 0}
 --- !u!114 &1110326237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2517,6 +2538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1119048587}
+  rend: {fileID: 0}
 --- !u!114 &1119048587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2628,6 +2650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1135002686}
+  rend: {fileID: 0}
 --- !u!114 &1135002686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2739,6 +2762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1225620833}
+  rend: {fileID: 0}
 --- !u!114 &1225620833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2850,6 +2874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1255037061}
+  rend: {fileID: 0}
 --- !u!114 &1255037061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2961,6 +2986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1266956591}
+  rend: {fileID: 0}
 --- !u!114 &1266956591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3072,6 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1285500677}
+  rend: {fileID: 0}
 --- !u!114 &1285500677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,6 +3210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1288495741}
+  rend: {fileID: 0}
 --- !u!114 &1288495741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,6 +3322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1290555745}
+  rend: {fileID: 0}
 --- !u!114 &1290555745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3405,6 +3434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1329288570}
+  rend: {fileID: 0}
 --- !u!114 &1329288570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,6 +3546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1337286673}
+  rend: {fileID: 0}
 --- !u!114 &1337286673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3627,6 +3658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1350455756}
+  rend: {fileID: 0}
 --- !u!114 &1350455756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,6 +3770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1412311580}
+  rend: {fileID: 0}
 --- !u!114 &1412311580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3849,6 +3882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1466892877}
+  rend: {fileID: 0}
 --- !u!114 &1466892877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3960,6 +3994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1524386745}
+  rend: {fileID: 0}
 --- !u!114 &1524386745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4071,6 +4106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1577137922}
+  rend: {fileID: 0}
 --- !u!114 &1577137922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,6 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1585401294}
+  rend: {fileID: 0}
 --- !u!114 &1585401294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4293,6 +4330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1603283775}
+  rend: {fileID: 0}
 --- !u!114 &1603283775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4404,6 +4442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1665040341}
+  rend: {fileID: 0}
 --- !u!114 &1665040341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4515,6 +4554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1667366422}
+  rend: {fileID: 0}
 --- !u!114 &1667366422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4626,6 +4666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1727354797}
+  rend: {fileID: 0}
 --- !u!114 &1727354797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4737,6 +4778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1737507471}
+  rend: {fileID: 0}
 --- !u!114 &1737507471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4848,6 +4890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1746711629}
+  rend: {fileID: 0}
 --- !u!114 &1746711629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,6 +5002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1747074673}
+  rend: {fileID: 0}
 --- !u!114 &1747074673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5070,6 +5114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1758174309}
+  rend: {fileID: 0}
 --- !u!114 &1758174309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5181,6 +5226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1845373471}
+  rend: {fileID: 0}
 --- !u!114 &1845373471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5292,6 +5338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1876775527}
+  rend: {fileID: 0}
 --- !u!114 &1876775527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5403,6 +5450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1904741538}
+  rend: {fileID: 0}
 --- !u!114 &1904741538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5514,6 +5562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1926557610}
+  rend: {fileID: 0}
 --- !u!114 &1926557610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,6 +5674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1951739283}
+  rend: {fileID: 0}
 --- !u!114 &1951739283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5736,6 +5786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 1977958773}
+  rend: {fileID: 0}
 --- !u!114 &1977958773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5847,6 +5898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 2081657074}
+  rend: {fileID: 0}
 --- !u!114 &2081657074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,6 +6010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 2120845399}
+  rend: {fileID: 0}
 --- !u!114 &2120845399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6069,6 +6122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 2132578800}
+  rend: {fileID: 0}
 --- !u!114 &2132578800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6180,6 +6234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 2136658098}
+  rend: {fileID: 0}
 --- !u!114 &2136658098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6291,6 +6346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileSafety: {fileID: 2145887087}
+  rend: {fileID: 0}
 --- !u!114 &2145887087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6313,6 +6369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9000039457589234403}
   - component: {fileID: 9000039457589234402}
+  - component: {fileID: -6565235044375575379}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -6417,6 +6474,24 @@ MonoBehaviour:
     - {fileID: 1904741540}
     - {fileID: 1926557612}
     - {fileID: 1747074672}
+  recreateAtStart: 0
   OnTileCreated:
     m_PersistentCalls:
       m_Calls: []
+  OnGridCreated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6565235044375575379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000039457589234412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bb60bc7eadc3a4b8fe249b4a8b1615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generator: {fileID: 9000039457589234402}
+  minSafeArea: 1
