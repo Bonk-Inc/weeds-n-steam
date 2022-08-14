@@ -36,10 +36,10 @@ public class GridTile : MonoBehaviour
 
     private void HandleEdgeSprite(int edgeNumber)
     {
-        if (edgeNumber == (edgeNumber | TOP_EDGE)) top.SetActive(true);
-        if (edgeNumber == (edgeNumber | BOTTOM_EDGE)) bottom.SetActive(true);
-        if (edgeNumber == (edgeNumber | LEFT_EDGE)) left.SetActive(true);
-        if (edgeNumber == (edgeNumber | RIGHT_EDGE)) right.SetActive(true);
+        if ((edgeNumber & TOP_EDGE) > 0) top.SetActive(true);
+        if ((edgeNumber & BOTTOM_EDGE) > 0) bottom.SetActive(true);
+        if ((edgeNumber & LEFT_EDGE) > 0) left.SetActive(true);
+        if ((edgeNumber & RIGHT_EDGE) > 0) right.SetActive(true);
     }
 
     public void SetTileSafety(bool safe = true, float delay = 0)
