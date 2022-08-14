@@ -9,17 +9,16 @@ public class TileSmokeDanger : TileDanger
     [SerializeField]
     private SpriteRenderer rend;
     [SerializeField]
-    private int damage;
+    private int damage = 1;
 
     public override void ToggleDanger(bool safe)
     {
-        safetyOn = safe;
         rend.enabled = !safe;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (safetyOn || !other.CompareTag("Player")) return;
+        if (safety.Safe || !other.CompareTag("Player")) return;
         if(playerHealth == null) playerHealth = other.GetComponent<PlayerHealth>();
         playerHealth.Damage(damage);
     }

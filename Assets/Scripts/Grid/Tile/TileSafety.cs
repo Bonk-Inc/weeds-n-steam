@@ -16,6 +16,10 @@ public class TileSafety : MonoBehaviour
      else StartCoroutine(StartSafetyToggle(safe, delay));
     }
 
+    private void Awake() {
+        SetSafety(safe);
+    }
+
     private void SetSafety(bool safe) {
         this.safe = safe;
         OnSafetyChanged?.Invoke(safe);
@@ -24,5 +28,10 @@ public class TileSafety : MonoBehaviour
     private IEnumerator StartSafetyToggle(bool safe, float delay) {
         yield return new WaitForSeconds(delay); // Change to activate a blinking system.
         SetSafety(safe);
+    }
+
+    [ContextMenu("Cap")]
+    private void SetDanger(){
+        SetSafety(false);
     }
 }
