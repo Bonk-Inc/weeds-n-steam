@@ -85,7 +85,7 @@ Transform:
   - {fileID: 8746899232945068867}
   - {fileID: 8746899232376704695}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &397911822294372768
 PrefabInstance:
@@ -100,8 +100,12 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
-      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: recreateAtStart
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnTileCreated.m_PersistentCalls.m_Calls.Array.size
@@ -109,6 +113,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
@@ -120,11 +128,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8746899232339765006}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2406667346401072397}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnTileCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8746899232339765006}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
@@ -136,6 +152,10 @@ PrefabInstance:
       value: CreateBox
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: InitatializeSetup
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnTileCreated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnTileCreated
       objectReference: {fileID: 0}
@@ -144,11 +164,19 @@ PrefabInstance:
       value: GridEdgeCalculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GridDangerCreator, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnTileCreated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GridEdgeCalculator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
       propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+      propertyPath: OnGridCreated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9000039457589234402, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
@@ -206,6 +234,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+--- !u!114 &2406667346401072397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6565235044375575379, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}
+  m_PrefabInstance: {fileID: 397911822294372768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746899232945068876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bb60bc7eadc3a4b8fe249b4a8b1615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8746899232945068867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9000039457589234403, guid: ca142e43585f19e48a1623f5cd3f13a6, type: 3}

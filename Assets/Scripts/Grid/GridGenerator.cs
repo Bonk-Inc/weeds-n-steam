@@ -42,6 +42,9 @@ public class GridGenerator : MonoBehaviour
     private void Start()
     {
         if(recreateAtStart) CreateGrid();
+        else {
+            OnGridCreated?.Invoke();
+        }
     }
 
     [ExecuteInEditMode, ContextMenu("Create Grid")]

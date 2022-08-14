@@ -13,6 +13,7 @@ public class GridTile : MonoBehaviour
     [SerializeField]
     private SpriteRenderer rend;
 
+    [SerializeField]
     private Vector2Int position;
 
     public Vector2Int Position => position;

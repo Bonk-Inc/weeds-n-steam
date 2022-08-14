@@ -22,7 +22,7 @@ public class GridDangerCreator : MonoBehaviour
                 tiles.Add(tile.Position, new TilePart(tile, tile.GetComponent<TileSafety>()));
             }
         }
-        SetDangerous();
+        SetDangerous(); // TODO Remove soon
     }
 
     public TilePart SetDangerous(float delay = 3) {
