@@ -21,7 +21,6 @@ public class GridEdgeCalculator : MonoBehaviour
             gridBounds = tile.Renderer.bounds;
             boundsStarted = true;
         }
-        Debug.Log("ass");
     }
 
     public void CreateBox()
