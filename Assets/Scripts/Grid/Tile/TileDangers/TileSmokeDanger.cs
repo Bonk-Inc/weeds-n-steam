@@ -15,22 +15,22 @@ public class TileSmokeDanger : TileDanger
     [SerializeField]
     private int damage = 1;
 
-    private const string tileSafety = "SmokeOut", tileDanger = "SmokIn";
+    private const string animBool = "Safe";
 
     public override void ToggleDanger(bool safe)
     {
         if(!safe) {
             rend.enabled = true;
-            animator.SetTrigger(tileDanger);
+            animator.SetBool(animBool, false);
         }
-        else animator.SetTrigger(tileSafety);
+        else animator.SetBool(animBool, true);
     }
 
     public void Dissapear() {        
         rend.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (safety.Safe || !other.CompareTag("Player")) return;
         if(playerHealth == null) playerHealth = other.GetComponent<PlayerHealth>();

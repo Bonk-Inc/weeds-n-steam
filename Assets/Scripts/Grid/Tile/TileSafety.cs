@@ -5,6 +5,7 @@ using System;
 
 public class TileSafety : MonoBehaviour
 {
+    [SerializeField]
     private bool safe = true;
 
     [SerializeField]
@@ -27,9 +28,9 @@ public class TileSafety : MonoBehaviour
         if (delay <= 0) SetSafety(safe);
         else StartCoroutine(StartSafetyToggle(safe, delay));
     }
-    private void SetSafety(bool safe)
+    private void SetSafety(bool isSafe)
     {
-        this.safe = safe;
+        safe = isSafe;
         OnSafetyChanged?.Invoke(safe);
     }
 
