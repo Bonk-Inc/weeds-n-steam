@@ -593,20 +593,44 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1752385316}
     - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5736155246874300986, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6653047869516412658, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_Name
@@ -655,6 +679,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1774776233992381452, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
+      propertyPath: maxDissapearTime
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774776233992381452, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
+      propertyPath: minDissapearTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6728022913804601072, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
       propertyPath: timer
       value: 
