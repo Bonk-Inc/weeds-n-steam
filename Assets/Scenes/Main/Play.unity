@@ -659,14 +659,6 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 58419579}
-    - target: {fileID: 8746899232945068866, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
-      propertyPath: tileSize
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746899232945068866, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
-      propertyPath: recreateAtStart
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8746899233121281877, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
       propertyPath: m_RootOrder
       value: 4

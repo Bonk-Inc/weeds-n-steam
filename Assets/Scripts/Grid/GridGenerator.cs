@@ -36,8 +36,7 @@ public class GridGenerator : MonoBehaviour
     private Transform tileHolder;
 
     public GridRow[] Rows { get => rows; }
-
-
+    public Vector2Int Size { get => size; }
 
     private void Start()
     {

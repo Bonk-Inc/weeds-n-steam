@@ -35,7 +35,7 @@ public class GridDangerCreator : MonoBehaviour
     public TilePart SetDangerous(float delay = 3) {
         var possibleTiles = tiles.Where(tile => tile.Value.safety.Safe).ToList();
         if(possibleTiles.Count == 0) return null;
-        var tile = possibleTiles.ElementAt(Random.Range(0, possibleTiles.Count));
+        var tile = possibleTiles.ElementAt(Random.Range(0, possibleTiles.Count-1)); //TODO Should this be -1?
         return SetDangerous(tile.Key, delay);
     }
 
@@ -63,7 +63,6 @@ public class GridDangerCreator : MonoBehaviour
         return tilePart;
     }
 
-    // TODO error checking - return false?
     public bool SetAllSaferous() {
         var tilesToSafe = tiles.Where(tile => !tile.Value.safety.Safe).ToArray();
         foreach (var tile in tilesToSafe)
@@ -71,6 +70,26 @@ public class GridDangerCreator : MonoBehaviour
             tile.Value.safety.SetTileSafety(true);
         }
         dangers.Clear();
+        return true;
+    }
+
+    public bool SetAllDangerous(float delay) {
+        var tilesToEndanger = tiles.Where(tile => tile.Value.safety.Safe).ToArray();
+        return SetAllDangerous(tilesToEndanger, delay);
+    }
+
+    public bool SetAllDangerousWithException(List<Vector2Int> exceptions, float delay) {
+        var tilesToEndanger = tiles.Where(tile => !exceptions.Contains(tile.Key)).ToArray();
+        return SetAllDangerous(tilesToEndanger, delay);
+    }
+
+    public bool SetAllDangerous(KeyValuePair<Vector2Int, TilePart>[] tilesToEndanger, float delay) {
+        dangers.Clear();
+        foreach (var tile in tilesToEndanger)
+        {
+            tile.Value.safety.SetTileSafety(false, delay);
+            dangers.Add(tile.Key);
+        }
         return true;
     }
 }
