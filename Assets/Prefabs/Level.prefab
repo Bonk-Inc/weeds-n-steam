@@ -47,10 +47,10 @@ MonoBehaviour:
   dangerCreator: {fileID: 2406667346401072397}
   difficulty: 1
   duration: 20
-  minSpawnTime: 3
-  maxSpawnTime: 6
-  minDissapearTime: 4
-  maxDissapearTime: 10
+  minSpawnTime: 1
+  maxSpawnTime: 5
+  minDissapearTime: 20
+  maxDissapearTime: 21
   dangerDelay: 6
 --- !u!1 &1871839289629886243
 GameObject:
@@ -103,7 +103,59 @@ MonoBehaviour:
   maxSpawnTime: 3
   minDissapearTime: 6
   maxDissapearTime: 12
-  dangerDelay: 3
+  dangerDelay: 2.5
+--- !u!1 &2443743011730150922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846562525953164130}
+  - component: {fileID: 1774776233992381452}
+  m_Layer: 0
+  m_Name: 4 - Randomness
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846562525953164130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443743011730150922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8513778345840857337}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1774776233992381452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443743011730150922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267dab3981d61ce45bbc411aa41f4e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerCreator: {fileID: 2406667346401072397}
+  difficulty: 4
+  duration: 50
+  minSpawnTime: 0.5
+  maxSpawnTime: 2
+  minDissapearTime: 8
+  maxDissapearTime: 12
+  dangerDelay: 0.5
 --- !u!1 &4015583776206169973
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,9 +203,9 @@ MonoBehaviour:
   dangerCreator: {fileID: 2406667346401072397}
   difficulty: 2
   duration: 30
-  minSpawnTime: 2
-  maxSpawnTime: 5
-  minDissapearTime: 6
+  minSpawnTime: 1
+  maxSpawnTime: 4
+  minDissapearTime: 10
   maxDissapearTime: 12
   dangerDelay: 4
 --- !u!1 &5954087874048005081
@@ -187,6 +239,7 @@ Transform:
   - {fileID: 4661523930381861482}
   - {fileID: 5375748376330342343}
   - {fileID: 7751208944400814607}
+  - {fileID: 1846562525953164130}
   m_Father: {fileID: 8746899233121281877}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -277,7 +330,7 @@ Transform:
   - {fileID: 8746899232376704695}
   - {fileID: 8513778345840857337}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6728022913804601072
 MonoBehaviour:
@@ -298,6 +351,7 @@ MonoBehaviour:
   - {fileID: 622684699758089513}
   - {fileID: 8291274441959652277}
   - {fileID: 6285669883855061487}
+  - {fileID: 1774776233992381452}
   currentWave: {fileID: 0}
 --- !u!1001 &397911822294372768
 PrefabInstance:
