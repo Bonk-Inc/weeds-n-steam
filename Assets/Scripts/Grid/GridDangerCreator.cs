@@ -33,7 +33,9 @@ public class GridDangerCreator : MonoBehaviour
     }
 
     public TilePart SetDangerous(float delay = 3) {
-        var tile = tiles.ElementAt(Random.Range(0, tiles.Count));
+        var possibleTiles = tiles.Where(tile => tile.Value.safety.Safe).ToList();
+        if(possibleTiles.Count == 0) return null;
+        var tile = possibleTiles.ElementAt(Random.Range(0, possibleTiles.Count));
         return SetDangerous(tile.Key, delay);
     }
 
@@ -63,10 +65,12 @@ public class GridDangerCreator : MonoBehaviour
 
     // TODO error checking - return false?
     public bool SetAllSaferous() {
-        foreach (var danger in dangers)
+        var tilesToSafe = tiles.Where(tile => !tile.Value.safety.Safe).ToArray();
+        foreach (var tile in tilesToSafe)
         {
-            SetSaferous(danger);
+            tile.Value.safety.SetTileSafety(true);
         }
+        dangers.Clear();
         return true;
     }
 }

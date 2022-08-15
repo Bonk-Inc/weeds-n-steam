@@ -134,6 +134,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7933c6c7ec84f4782ce890220f898c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1276758915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5736155246874300991, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+  m_PrefabInstance: {fileID: 5736155246073189171}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f80dbdffeb20574bbbdc1c1c5ce02af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587619097
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +382,26 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841942, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_Size.x
+      value: 4.0326767
+      objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841942, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_Size.y
+      value: 4.170079
+      objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841942, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0024873018
+      objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841942, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.055593014
+      objectReference: {fileID: 0}
+    - target: {fileID: 617742390771841943, guid: 8375586639beb0546b108aecda696d72, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6841518828686695014, guid: 8375586639beb0546b108aecda696d72, type: 3}
       propertyPath: dodgeSpeed
       value: 60
@@ -468,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: m_ForceIntoRT
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3332708443851509247, guid: 952db7bad768a624698476157657a188, type: 3}
       propertyPath: orthographic size
@@ -593,6 +624,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5736155246874300991, guid: edf0d239be9d937429d85634404b53c6, type: 3}
+      propertyPath: startImmediate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6653047869516412658, guid: edf0d239be9d937429d85634404b53c6, type: 3}
       propertyPath: m_Name
       value: UI
@@ -640,6 +675,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6728022913804601072, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1276758915}
     - target: {fileID: 8746899233121281877, guid: 5adae6e68d6d31c419ca0621504b3840, type: 3}
       propertyPath: m_RootOrder
       value: 4
